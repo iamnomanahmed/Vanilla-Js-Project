@@ -34,4 +34,4 @@ jobs:
 
     # Deploy App to Surge
     - name: Deploying Project to Surge
-      run: surge ./ http://axiomjavascriptproject.surge.sh/ --token ${{ secrets.SURGE_TOKEN }}
+      run: surge ./ http://axiomjavascriptproject.surge.sh/ --token ${{secrets.SURGE_TOKEN}}
