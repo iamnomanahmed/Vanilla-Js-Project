@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap");
+
+
+:root{
+  --success-color:limegreen;
+  --error-color: orangered;
+}
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #5946FF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: "Noto Sans JP", sans-serif;
+  
+}
+
+.container {
+  background-color: white;
+  box-shadow: 1px 1px 19px 8px rgba(0, 0, 0, 0.03);
+  padding: 25px;
+  width: 400px;
+  border-radius: 50px;
+  
+}
+
+h2 {
+  text-align: center;
+}
+
+
+
+
+.form-control {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+  
+}
+
+.form-control label {
+  color: gray;
+  display: block;
+}
+
+.form-control input {
+  width: 100%;
+  border: 2px solid lightgrey;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.form-control input:focus {
+  outline: 0;
+  border-color: gray;
+}
+button {
+  cursor: pointer;
+  width: 100%;
+  background-color: #5946FF;
+  border :0px;
+  color: white;
+  padding: 10px;
+  font-family: "Noto Sans JP", sans-serif;
+  margin-bottom: 15px;
+  outline: 0;
+  
+}
+
+
+.form-control.success input{
+  border-color: var(--success-color);
+}
+.form-control.error input{
+  border-color: var(--error-color);
+}
+.form-control small {
+  color:var(--error-color);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+}
+
+.form-control.error small{
+  visibility: visible;
+}
+
+
+
+
+.form-div{margin-bottom: 40px;}
