@@ -24,9 +24,7 @@ async function generateRandomUser() {
     
     const newUser = {
         name: `${user.name.first} ${user.name.last}` ,
-        worth: Math.round(Math.random()*1000000),
-       
-     
+        worth: Math.round(Math.random()*1000000)
     };
 
     addData(newUser);
@@ -65,7 +63,7 @@ function calculateTotalNetWorth() {
     );
 
     const totalNetWorthElement = document.createElement('div');
-    totalNetWorthElement.innerHTML = `<h3 class ='worth >Total Net Worth: <strong>${formatCurrency(totalWorth)}</strong></h3>`;
+    totalNetWorthElement.innerHTML = `<h3>Total Net Worth: <strong>${formatCurrency(totalWorth)}</strong></h3>`;
     main.appendChild(totalNetWorthElement);
 }
 
