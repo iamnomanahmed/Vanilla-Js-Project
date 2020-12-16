@@ -28,6 +28,15 @@ body {
   list-style-type: none;
   width: 50%;
 }
+.draggable-list .wrong{
+   background-color: red;
+}
+
+.draggable-list .right{
+  background-color: green;
+}
+
+
 
 .draggable-list li {
   background-color: #fff;
@@ -54,16 +63,18 @@ body {
   background-color: #eaeaea;
 }
 
-.draggable-list .person-name {
+.draggable-list .country-name {
   margin: 0 20px 0 0;
 }
 
-.draggable-list li.right .person-name {
-  color: #3ae374;
+.draggable-list li.right .country-name {
+ 
+  color:white;
 }
 
-.draggable-list li.wrong .person-name {
-  color: #ff3838;
+.draggable-list li.wrong .country-name {
+ color: white;
+
 }
 
 .draggable {
